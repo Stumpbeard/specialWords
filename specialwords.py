@@ -14,7 +14,7 @@ def allSpecialNouns():
 		if '_' not in lemma.name():		# Remove this line to include phrases
 			nounLems.append(lemma)
 
-	nounOut = open("noun_lemmas_counts.tsv", 'w')
+	nounOut = open("noun_lemmas_counts.txt", 'w')
 	for lemma in nounLems:
 		nounOut.write(lemma.name() + "\t" + str(lemma.count()) + "\n")
 
@@ -33,7 +33,7 @@ def allSpecialVerbs():
 		if '_' not in lemma.name():		# Remove this line to include phrases
 			verbLems.append(lemma)
 
-	verbOut = open("verb_lemmas_counts.tsv", 'w')
+	verbOut = open("verb_lemmas_counts.txt", 'w')
 	for lemma in verbLems:
 		verbOut.write(lemma.name() + "\t" + str(lemma.count()) + "\n")
 
@@ -52,7 +52,7 @@ def allSpecialAdvs():
 		if '_' not in lemma.name():		# Remove this line to include phrases
 			advLems.append(lemma)
 
-	advOut = open("adv_lemmas_counts.tsv", 'w')
+	advOut = open("adv_lemmas_counts.txt", 'w')
 	for lemma in advLems:
 		advOut.write(lemma.name() + "\t" + str(lemma.count()) + "\n")
 
@@ -71,7 +71,7 @@ def allSpecialAdjs():
 		if '_' not in lemma.name():		# Remove this line to include phrases
 			adjLems.append(lemma)
 
-	adjOut = open("adj_lemmas_counts.tsv", 'w')
+	adjOut = open("adj_lemmas_counts.txt", 'w')
 	for lemma in adjLems:
 		adjOut.write(lemma.name() + "\t" + str(lemma.count()) + "\n")
 
